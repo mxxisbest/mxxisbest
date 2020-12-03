@@ -1,5 +1,4 @@
 input.onButtonPressed(Button.A, function () {
-    music.setVolume(10)
     music.startMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.ForeverInBackground)
     for (let index = 0; index < 1; index++) {
         basic.showString("M")
@@ -28,10 +27,7 @@ input.onButtonPressed(Button.A, function () {
     music.stopAllSounds()
 })
 input.onButtonPressed(Button.AB, function () {
-    music.setVolume(10)
     soundExpression.mysterious.play()
 })
-input.onButtonPressed(Button.B, function () {
-    basic.showNumber(input.temperature())
-})
+music.setVolume(7)
 music.playTone(587, music.beat(BeatFraction.Whole))
